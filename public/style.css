@@ -26,8 +26,7 @@ header {
     display: flex;
     justify-content: center;
     color: #fff;
-    text-shadow: 
-    2px 2px 5px #222;
+    text-shadow: 2px 2px 5px #222;
     text-transform: uppercase;
     align-items: center;
     text-align: center;
@@ -62,6 +61,26 @@ main input:focus {
     background-color: rgba(255, 255, 255, 0.9);
 }
 
+main .submit-btn {
+    color: #222;
+    text-transform: uppercase;
+    border-radius: 100px;
+}
+
+main .submit-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+main .submit-btn:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}
+
+main .submit-btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+}
+
 main .song-description {
     width: 100%;
     max-width: 280px;
@@ -75,9 +94,9 @@ main .song-description {
 main .btn {
     width: 100%;
     max-width: 280px;
-    color:  rgba(255, 0, 0, 0.9);
-    text-shadow: 
-    2px 2px 4px #a5a5a5;
+    color: rgba(0, 52, 163, 0.932);
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px #a5a5a5;
     text-decoration: none;
     padding: 10px;
     margin: 50px 0;
@@ -103,5 +122,5 @@ main .btn:hover {
 
 .footer a {
     text-decoration: none;
-    color:  rgba(255, 255, 255);
+    color: rgba(255, 255, 255);
 }

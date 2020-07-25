@@ -6,6 +6,13 @@ inputbox.addEventListener("keypress", (event) => {
     }
 });
 
+const submitBtn = document.querySelector(".submit-btn");
+submitBtn.addEventListener("click", (event) => {
+    console.log("clicked");
+    get_recordingId(inputbox.value);
+    inputbox.value = "";
+});
+
 const get_recordingId = (url) => {
     const regex = /&recordingId=([0-9]*)/;
     let recordingId = url.match(regex);
